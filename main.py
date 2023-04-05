@@ -286,7 +286,7 @@ model_transfer.classifier[6] = nn.Linear( model_transfer.classifier[6].in_featur
 
 print(model_transfer)
 
--#-# Do NOT modify the code below this line. #-#-#
+#-#-# Do NOT modify the code below this line. #-#-#
 if use_cuda:
     model_transfer = model_transfer.cuda()
 
