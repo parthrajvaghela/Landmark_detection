@@ -1,4 +1,4 @@
-cv2
+opencv-python
 matplotlib
 numpy
 PIL
