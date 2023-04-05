@@ -332,8 +332,8 @@ def predict_landmarks(img_path, k):
     image= transform(image)
     image.unsqueeze_(0)
   
-    if use_cuda:
-        image = image.cuda()
+#     if use_cuda:
+#         image = image.cuda()
         
     model_transfer.eval()  
                                     
