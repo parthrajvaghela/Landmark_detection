@@ -275,18 +275,18 @@ from PIL import Image
 # import torch.nn as nn
 # from torchvision import models
 
-# model_transfer = models.vgg16(weights=True)
+model_transfer = models.vgg16(weights=True)
 
-# #freezing features- weights
-# for param in model_transfer.features.parameters():
-#     param.require_grad =False
+#freezing features- weights
+for param in model_transfer.features.parameters():
+    param.require_grad =False
 
-# # replace last layer    
-# model_transfer.classifier[6] = nn.Linear( model_transfer.classifier[6].in_features , len(classes) )
+# replace last layer    
+model_transfer.classifier[6] = nn.Linear( model_transfer.classifier[6].in_features , len(classes) )
 
-# print(model_transfer)
+print(model_transfer)
 
-# #-#-# Do NOT modify the code below this line. #-#-#
+#-#-# Do NOT modify the code below this line. #-#-#
 # if use_cuda:
 #     model_transfer = model_transfer.cuda()
 
