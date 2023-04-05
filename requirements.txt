@@ -1,7 +1,7 @@
 opencv-python
 matplotlib
 numpy
-PIL
+Pillow
 torch
 torchvision
 streamlit
